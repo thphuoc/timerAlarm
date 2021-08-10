@@ -4,3 +4,5 @@ How to build:
 2. Go Android Preferences > Build > Gradle > Select Java 11 in dropdown box Gradle JDK
 ![Issue Image](image.jpg)
    
+Download apk in here:
+![Apk Image](apk_code.jpg)
