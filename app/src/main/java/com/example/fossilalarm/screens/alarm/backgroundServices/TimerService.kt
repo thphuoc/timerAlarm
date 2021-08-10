@@ -115,6 +115,7 @@ class TimerService : Service() {
             .setAutoCancel(true)
             .setContentTitle("Timer")
             .setContentText(message)
+            .setSilent(true)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setSmallIcon(R.mipmap.ic_launcher)
         val notificationIntent = Intent(this, AlarmActivity::class.java)
