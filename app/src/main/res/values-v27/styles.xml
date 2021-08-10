@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="DialogAnimation" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+</resources>

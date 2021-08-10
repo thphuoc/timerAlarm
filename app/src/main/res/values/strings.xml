@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FossilAlarm</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="tab_text_alarm">Alarm</string>
+    <string name="tab_text_clock">World Clock</string>
+    <string name="tab_text_stopwatch">Stopwatch</string>
+    <string name="tab_text_timer">Timer</string>
+    <string name="btn_start">Start</string>
+    <string name="msg_time_over">Time is over</string>
+    <string name="btn_ok">Ok</string>
+</resources>

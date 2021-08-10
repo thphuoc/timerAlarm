@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/imgAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/_15dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintEnd_toStartOf="@id/imgMoreOption"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgMoreOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/_15dp"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/progressTimer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_15dp"
+        app:cpb_background_progressbar_color="#E8E8E8"
+        app:cpb_background_progressbar_width="5dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_color="#3f51b5"
+        app:cpb_progressbar_width="8dp"
+        app:cpb_round_border="true"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgMoreOption" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/progressTimer"
+        app:layout_constraintEnd_toEndOf="@id/progressTimer"
+        app:layout_constraintStart_toStartOf="@id/progressTimer"
+        app:layout_constraintTop_toTopOf="@id/progressTimer" />
+
+    <Button
+        android:id="@+id/btnPauseOrStart"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/btn_pause"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/btn_pause"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnCancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressTimer" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/btn_cancel"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="@string/btn_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnPauseOrStart"
+        app:layout_constraintTop_toTopOf="@id/btnPauseOrStart" />
+</androidx.constraintlayout.widget.ConstraintLayout>
